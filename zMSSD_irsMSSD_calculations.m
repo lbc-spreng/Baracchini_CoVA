@@ -57,7 +57,7 @@ for i = 1:length(young_ids)
     
 end    
 
-%% Script to create irsMSSD
+%% Script to create irsMSSD (no reversing or adding constant yet)
 clear all
 [num txt raw] = xlsread('FinalSample_Cornell.xlsx');
 agegroup = txt(:,2);
@@ -77,7 +77,7 @@ for j = 1:length(mat)
     
     transpose = sdVol';
     
-    square_mssd = abs(sdVol-transpose); %irsMSSD
+    square_mssd = abs(sdVol-transpose); %preliminar irsMSSD
     
     for i = 1:200
         square_mssd(i,i) = NaN; %remove diagonal values
