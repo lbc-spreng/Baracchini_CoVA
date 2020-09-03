@@ -57,7 +57,7 @@ for i = 1:length(young_ids)
     
 end    
 
-%% Script to create irsMSSD vector for each subject
+%% Script to create irsMSSD
 clear all
 [num txt raw] = xlsread('FinalSample_Cornell.xlsx');
 agegroup = txt(:,2);
